@@ -1,0 +1,17 @@
+/* Définition des mixins */
+
+@mixin musical_note {
+    margin: 0;
+    padding: 10px;
+    font-size: 4em;
+    background: linear-gradient(to right, $menu1-theme1, $menu1-theme2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+}
+
+@mixin menu1_titre {
+    margin: 0 0 7px;
+    font-family: 'Devonshire-Regular';
+    font-size: 2em;
+}
