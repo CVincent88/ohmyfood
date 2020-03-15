@@ -108,6 +108,7 @@ footer a {
   text-decoration: none;
 }
 
+/* Définition des paramètre de la page principale */
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,7 +137,7 @@ footer a {
   color: #451b21;
 }
 
-.main__menu__1 .musical-note {
+.main__menu__1 .enseigne1 .musical-note {
   margin: 0;
   padding: 10px;
   font-size: 4em;
@@ -147,7 +148,7 @@ footer a {
   display: inline;
 }
 
-.main__menu__1 h3 {
+.main__menu__1 .enseigne1 h3 {
   margin: 0 0 7px;
   font-family: 'Devonshire-Regular';
   font-size: 2em;
@@ -227,6 +228,7 @@ footer a {
   font-weight: 200;
 }
 
+/* Définition des paramètres des boutons */
 .soon {
   width: 40%;
   text-align: center;
