@@ -190,8 +190,8 @@ footer a {
 }
 
 .main__menu__2 h3 {
-  background: -webkit-gradient(linear, left top, right top, from(#c77413), to(#9460fb));
-  background: linear-gradient(to right, #c77413, #9460fb);
+  background: -webkit-gradient(linear, left top, right top, from(#c67412), to(#6e4ccc));
+  background: linear-gradient(to right, #c67412, #6e4ccc);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -203,7 +203,7 @@ footer a {
 .main__menu__2 a {
   font-family: ApparatusSIL, sans-serif;
   font-size: 3em;
-  color: #c77413;
+  color: #c67412;
   font-weight: 700;
 }
 
@@ -299,6 +299,8 @@ h2 {
   font-size: 1.5em;
   padding: 15px 0;
   margin-bottom: 50px;
+  -webkit-box-shadow: 0 0 5px gray;
+          box-shadow: 0 0 5px gray;
   color: #451b21;
   background-color: #fcdfdb;
   font-family: 'Segoe Print', sans-serif;
@@ -427,14 +429,16 @@ h2 {
   font-size: 1.5em;
   padding: 15px 0;
   margin-bottom: 50px;
+  -webkit-box-shadow: 0 0 5px gray;
+          box-shadow: 0 0 5px gray;
   color: black;
   background-color: #fff5fe;
   font-family: 'ingleby_regular', sans-serif;
 }
 
 .menu2 h3 {
-  background: -webkit-gradient(linear, left top, right top, from(#c77413), to(#9460fb));
-  background: linear-gradient(to right, #c77413, #9460fb);
+  background: -webkit-gradient(linear, left top, right top, from(#c67412), to(#6e4ccc));
+  background: linear-gradient(to right, #c67412, #6e4ccc);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -451,12 +455,11 @@ h2 {
 
 .menu2 h4 span {
   background-color: #fff5fe;
-  padding: 0 45px;
 }
 
 .menu2__section {
   width: 90%;
-  margin: 5px 0 40px;
+  margin-bottom: 40px;
   font-weight: lighter;
 }
 
@@ -510,21 +513,31 @@ h2 {
   font-size: 1.5em;
   padding: 15px 0;
   margin-bottom: 50px;
-  color: #339af9;
+  -webkit-box-shadow: 0 0 5px gray;
+          box-shadow: 0 0 5px gray;
+  color: black;
   background-color: #f9f9f9;
   font-family: 'Segoe Print', sans-serif;
+}
+
+.menu3 h3 {
+  text-align: center;
+  font-size: 3em;
+  background: -webkit-gradient(linear, left top, right top, from(#1944e2), to(#91c7f9));
+  background: linear-gradient(to right, #1944e2, #91c7f9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu3 h4 {
   text-align: center;
   font-size: 1.5em;
   font-weight: bolder;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fcdfdb), color-stop(47%, #fcdfdb), color-stop(50%, #451b21), color-stop(51%, #451b21), color-stop(54%, #fcdfdb), to(#fcdfdb));
-  background: linear-gradient(#fcdfdb 0%, #fcdfdb 47%, #451b21 50%, #451b21 51%, #fcdfdb 54%, #fcdfdb 100%);
 }
 
 .menu3 h4 span {
-  background-color: #fcdfdb;
+  background-color: #f9f9f9;
   padding: 0 45px;
 }
 
@@ -537,7 +550,7 @@ h2 {
   padding: 0;
   line-height: 3;
   list-style-type: none;
-  width: 100%;
+  width: 80%;
   margin: auto;
 }
 
@@ -571,21 +584,30 @@ h2 {
   font-size: 1.5em;
   padding: 15px 0;
   margin-bottom: 50px;
-  color: #7cc362;
+  -webkit-box-shadow: 0 0 5px gray;
+          box-shadow: 0 0 5px gray;
+  color: black;
   background-color: #fdfffd;
   font-family: 'Segoe Print', sans-serif;
+}
+
+.menu4 h3 {
+  font-size: 3.5em;
+  background: -webkit-gradient(linear, left top, right top, from(#61a75a), to(#c7f79e));
+  background: linear-gradient(to right, #61a75a, #c7f79e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu4 h4 {
   text-align: center;
   font-size: 1.5em;
   font-weight: bolder;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fcdfdb), color-stop(47%, #fcdfdb), color-stop(50%, #451b21), color-stop(51%, #451b21), color-stop(54%, #fcdfdb), to(#fcdfdb));
-  background: linear-gradient(#fcdfdb 0%, #fcdfdb 47%, #451b21 50%, #451b21 51%, #fcdfdb 54%, #fcdfdb 100%);
 }
 
 .menu4 h4 span {
-  background-color: #fcdfdb;
+  background-color: #fdfffd;
   padding: 0 45px;
 }
 

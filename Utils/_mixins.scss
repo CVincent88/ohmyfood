@@ -9,6 +9,7 @@
     font-size: 1.5em;
     padding: 15px 0;
     margin-bottom: 50px;
+    box-shadow: 0 0 5px gray;
 
     $theme_menu: map-get($mapmenu, $menu);
     color: map-get($theme_menu, txt);

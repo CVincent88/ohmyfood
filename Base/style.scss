@@ -95,11 +95,10 @@ h2{
     }
     & h4 span{
         background-color: $background-color-menu2;
-        padding: 0 45px;
     }
     &__section{
         width: 90%;
-        margin: 5px 0 40px;
+        margin-bottom: 40px;
         font-weight: lighter;
         & ul{
             padding: 0;
@@ -117,13 +116,13 @@ h2{
             }
         }
         &__entrees{
-            color: $menu2-entrees;
+            color: $menu2-theme1;
         }
         &__plats{
-            color: $menu2-plats;
+            color: $menu2-theme3;
         }
         &__desserts{
-            color: $menu2-desserts;
+            color: $menu2-theme2;
         }
     }
     
@@ -132,15 +131,21 @@ h2{
 .menu3{
     @include menu_config (menu3);
     font-family: 'Segoe Print', sans-serif;
-    
+    & h3{
+        text-align: center;
+        font-size: 3em;
+        background: linear-gradient(to right, $menu3-theme1, $menu3-theme2);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     & h4{
         text-align: center;
         font-size: 1.5em;
         font-weight: bolder;
-        background: linear-gradient($background-color-menu1 0%, $background-color-menu1 47%, $menu1-theme3 50%, $menu1-theme3 51%, $background-color-menu1 54%, $background-color-menu1 100%);
     }
     & h4 span{
-        background-color: $background-color-menu1;
+        background-color: $background-color-menu3;
         padding: 0 45px;
       }
     &__section{
@@ -150,7 +155,7 @@ h2{
             padding: 0;
             line-height: 3;
             list-style-type: none;
-            width: 100%;
+            width: 80%;
             margin: auto;
             & li{
                 display: flex;
@@ -167,15 +172,20 @@ h2{
 .menu4{
     @include menu_config (menu4);
     font-family: 'Segoe Print', sans-serif;
-    
+    & h3{
+        font-size: 3.5em;
+        background: linear-gradient(to right, $menu4-theme1, $menu4-theme2);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     & h4{
         text-align: center;
         font-size: 1.5em;
         font-weight: bolder;
-        background: linear-gradient($background-color-menu1 0%, $background-color-menu1 47%, $menu1-theme3 50%, $menu1-theme3 51%, $background-color-menu1 54%, $background-color-menu1 100%);
     }
     & h4 span{
-        background-color: $background-color-menu1;
+        background-color: $background-color-menu4;
         padding: 0 45px;
       }
     &__section{

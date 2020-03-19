@@ -11,8 +11,9 @@ $background-color-menu4: #fdfffd;
 $menu1-theme1: #f05560;
 $menu1-theme2: #f78f6a;
 $menu1-theme3: #451b21;
-$menu2-theme1: #c77413;
-$menu2-theme2: #9460fb;
+$menu2-theme1: #c67412;
+$menu2-theme2: #6e4ccc;
+$menu2-theme3: #a56799;
 $menu3-theme1: #1944e2;
 $menu3-theme2: #91c7f9;
 $menu3-theme3: #339af9;
@@ -20,9 +21,6 @@ $menu4-theme1: #61a75a;
 $menu4-theme2: #c7f79e;
 $menu4-theme3: #7cc362;
 
-$menu2-entrees: #c67412;
-$menu2-plats: #a56799;
-$menu2-desserts: #6e4ccc;
 
 
 
@@ -38,11 +36,11 @@ $mapmenu: (
         bg: $background-color-menu2,
     ),
     menu3:(
-        txt: $menu3-theme3,
+        txt: black,
         bg: $background-color-menu3,
     ),
     menu4:(
-        txt:$menu4-theme3,
+        txt: black,
         bg: $background-color-menu4,
     )
 );
