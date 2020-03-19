@@ -5,7 +5,8 @@
     flex-flow: row wrap;
     justify-content: center;
     &__menu{
-        width: 35%;
+        width:40%;
+        min-width: 430px;
         height: 600px;
         margin: 25px;
         box-shadow: 0 0 3px rgba(0, 0, 0, .3);
