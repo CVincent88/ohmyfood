@@ -1,4 +1,19 @@
-/* Définition des mixins */
+// Définition des mixins 
+
+@mixin menu_config ($menu) {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 15px 0;
+    margin-bottom: 50px;
+
+    $theme_menu: map-get($mapmenu, $menu);
+    color: map-get($theme_menu, txt);
+    background-color: map-get($theme_menu, bg);
+}
 
 @mixin musical_note {
     padding-top: 10px;
@@ -17,4 +32,6 @@
     font-size: 2em;
     font-weight: lighter;
 }
+
+
 

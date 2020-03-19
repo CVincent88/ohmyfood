@@ -1,4 +1,4 @@
-/*Définition des variables du site */
+// Définition des variables du site 
 
 $color-primary: #589c87;
 $color-secondary: #fdcb46;
@@ -20,3 +20,25 @@ $menu4-theme1: #61a75a;
 $menu4-theme2: #c7f79e;
 $menu4-theme3: #7cc362;
 
+
+
+// Définition des maps du site
+
+$mapmenu: (
+    menu1:(
+        txt: $menu1-theme3,
+        bg: $background-color-menu1,
+    ),
+    menu2:(
+        txt: black,
+        bg: $background-color-menu2,
+    ),
+    menu3:(
+        txt: $menu3-theme3,
+        bg: $background-color-menu3,
+    ),
+    menu4:(
+        txt:$menu4-theme3,
+        bg: $background-color-menu4,
+    )
+);
