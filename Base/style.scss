@@ -78,37 +78,55 @@ h2{
 
 .menu2{
     @include menu_config (menu2);
-    font-family: 'Segoe Print', sans-serif;
-    
+    font-family: 'ingleby_regular', sans-serif;
+    & h3{
+        background: linear-gradient(to right, $menu2-theme1, $menu2-theme2);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'CroissantOne-Regular', sans-serif;
+        font-size: 1.7em;
+        margin: 70px 0;
+    }
     & h4{
         text-align: center;
-        font-size: 1.5em;
-        font-weight: bolder;
-        background: linear-gradient($background-color-menu1 0%, $background-color-menu1 47%, $menu1-theme3 50%, $menu1-theme3 51%, $background-color-menu1 54%, $background-color-menu1 100%);
+        font-family: 'ingleby_bold', sans-serif;
+        font-weight: lighter;
     }
     & h4 span{
-        background-color: $background-color-menu1;
+        background-color: $background-color-menu2;
         padding: 0 45px;
-      }
+    }
     &__section{
         width: 90%;
-        margin: 5px 0 10px;
+        margin: 5px 0 40px;
+        font-weight: lighter;
         & ul{
             padding: 0;
             line-height: 3;
             list-style-type: none;
-            width: 100%;
+            width: 80%;
             margin: auto;
             & li{
                 display: flex;
                 justify-content: space-between;
                 font-weight: lighter;
                 & .prix{
-                    font-weight: bolder;
+                    font-family: 'ingleby_bold', sans-serif;
                 }
             }
         }
+        &__entrees{
+            color: $menu2-entrees;
+        }
+        &__plats{
+            color: $menu2-plats;
+        }
+        &__desserts{
+            color: $menu2-desserts;
+        }
     }
+    
 }
 
 .menu3{
