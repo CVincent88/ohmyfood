@@ -1,4 +1,14 @@
 /* Définition des propritétés du footer */
+$shake-intensity: 2%;
+
+@keyframes shaky{
+    from{
+        transform: translateX($shake-intensity);
+    }
+    to{
+        transform: translateX(-$shake-intensity);
+    }
+}
 
 footer{
     width: 100%;
@@ -15,5 +25,10 @@ footer{
         margin: 0 20px;
         color: $color-secondary;
         text-decoration: none;
+        &:hover{
+            animation: shaky .1s cubic-bezier(.4,.1,.6,.9);
+            animation-iteration-count: 3;
+        }
     }
 }
+

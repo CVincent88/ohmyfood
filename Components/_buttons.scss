@@ -5,7 +5,7 @@
         transform: translateY(0)
     }
     25%{
-        transform: translateY(-11px);
+        transform: translateY(-9px);
     }
     50%{
         transform: translateY(0);
@@ -43,8 +43,8 @@
             @for $i from 1 through 3 {
                 &--#{$i} {
                     animation-delay: .2s * $i;
-                 }
-            }
+                }
+            }   
         }
     }   
 }
