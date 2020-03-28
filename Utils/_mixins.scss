@@ -1,19 +1,29 @@
 // Définition des mixins 
 
-@mixin menu_config ($menu) {
+@mixin menu_config($menu_selected){
     width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.5em;
-    padding: 15px 0;
+    padding: 20px 0;
     margin-bottom: 50px;
     box-shadow: 0 0 5px gray;
+    background-color: map-get($m_menu_background_color, $menu_selected);
+}
 
-    $theme_menu: map-get($mapmenu, $menu);
-    color: map-get($theme_menu, txt);
-    background-color: map-get($theme_menu, bg);
+@mixin dishes_text_color($menu_selected){
+    $menu_selected: map-get($m_dishes_text_color, $menu_selected);
+    .entrees{
+        color: map-get($menu_selected, entrees);
+    }
+    .plats{
+        color: map-get($menu_selected, plats);
+    }
+    .desserts{
+        color: map-get($menu_selected, desserts);
+    }
 }
 
 @mixin musical_note {
@@ -34,5 +44,70 @@
     font-weight: lighter;
 }
 
+@mixin anim_underline($selected_menu){
+    &:hover::before {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    &::before{
+        content: '';
+        width: 75%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 12%;
+        border-radius: 50px;
+        transform: scaleX(0);
+        transform-origin: left;
+        opacity: 0;
+        transition: all .9s ease-in-out;
+        background-color: map-get($menu_category_underline_color, $selected_menu);
+    }
+}
 
+@mixin anim_fondu{
+    .fondu{
+        transform: scale(1);
+        opacity: 1;
+    }
+    a:hover{
+        display: inline;
+        & + .fondu{
+        transform: scale(1.6);
+        // filter: blur(2px);
+        opacity: .3;
+        transition: all .3s ease-in-out;
+        }    
+    }
+}
 
+// Définit les lignes autour du titre de la catégorie de plat
+@mixin contour_titre($menu_selected){
+    .contour{
+        width: 100%;
+        height: 5px;
+        position: relative;
+        height: 60px;
+        margin-bottom: 15px;
+        &::after{
+            $menu_selected: map-get($m_dishes_outline_color, $menu_selected);
+            content: "";
+            position: absolute;
+            height: 5px;
+            top: 50%;
+            width: 100%;            
+        }
+        &__entrees::after{
+            border-bottom: 1px solid map-get($menu_selected, entrees);
+            border-top: 1px solid map-get($menu_selected, entrees);
+        }
+        &__plats::after{
+            border-bottom: 1px solid map-get($menu_selected, plats);
+            border-top: 1px solid map-get($menu_selected, plats);
+        }
+        &__desserts::after{
+            border-bottom: 1px solid map-get($menu_selected, desserts);
+            border-top: 1px solid map-get($menu_selected, desserts);
+        }
+    }  
+}

@@ -10,11 +10,15 @@
         height: 600px;
         margin: 25px;
         box-shadow: 0 0 3px rgba(0, 0, 0, .3);
-        padding-top: 33vh;
         text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        @include anim_fondu;
         &__1{
             background-color: $background-color-menu1;
             color: $menu1-theme3;
+            overflow: hidden;
             & .enseigne1{
                 line-height: 1;
                 & .musical-note{
@@ -27,10 +31,12 @@
             & a{
                 font-family: 'Kalam-Regular', sans-serif;
                 font-size: 3.5em;
+                display: inline;
             }
         }
         &__2{
             background-color: $background-color-menu2;
+            overflow: hidden;
             & h3{
                 background: linear-gradient(to right, $menu2-theme1, $menu2-theme2);
                 background-clip: text;
@@ -49,6 +55,7 @@
         }
         &__3{
             background-color: $background-color-menu3;
+            overflow: hidden;
             & h3{
                 background: linear-gradient(to right, $menu3-theme1, $menu3-theme2);
                 background-clip: text;
@@ -67,6 +74,7 @@
         }
         &__4{
             background-color: $background-color-menu4;
+            overflow: hidden;
             & h3{
                 background: linear-gradient(to right, $menu4-theme1, $menu4-theme2);
                 background-clip: text;

@@ -22,25 +22,65 @@ $menu4-theme2: #c7f79e;
 $menu4-theme3: #7cc362;
 
 
+$menu_category_underline_color: (menu1: $menu1-theme3, menu2:$menu2-theme3, menu3: $menu3-theme3, menu4: $menu4-theme3);
 
+/* ------- Définition des maps du site ------ */
 
-// Définition des maps du site
+//Couleur de fond des menus
 
-$mapmenu: (
-    menu1:(
-        txt: $menu1-theme3,
-        bg: $background-color-menu1,
+$m_menu_background_color: (
+    menu1: $background-color-menu1,
+    menu2: $background-color-menu2,
+    menu3: $background-color-menu3,
+    menu4: $background-color-menu4,
+);
+
+// Couleur catégories de plats
+
+$m_dishes_text_color: (
+    menu1: (
+        entrees: $menu1-theme3,
+        plats: $menu1-theme3,
+        desserts: $menu1-theme3,
     ),
-    menu2:(
-        txt: black,
-        bg: $background-color-menu2,
+    menu2: (
+        entrees: $menu2-theme1,
+        plats: $menu2-theme3,
+        desserts: $menu2-theme2,
     ),
-    menu3:(
-        txt: black,
-        bg: $background-color-menu3,
+    menu3: (
+        entrees: black,
+        plats: black,
+        desserts: black,
     ),
-    menu4:(
-        txt: black,
-        bg: $background-color-menu4,
-    )
+    menu4: (
+        entrees: black,
+        plats: black,
+        desserts: black,
+    ), 
+);
+
+// Couleur ligne entourant la catégorie de plat
+
+$m_dishes_outline_color: (
+    menu1: (
+        entrees: $menu1-theme3,
+        plats: $menu1-theme3,
+        desserts: $menu1-theme3,
+    ),
+    menu2: (
+        entrees: $menu2-theme1,
+        plats: $menu2-theme3,
+        desserts: $menu2-theme2,
+    ),
+    menu3: (
+        entrees: #0e32de,
+        plats: #0b73f3,
+        desserts: #4eaff7,
+    ),
+    menu4: (
+        entrees: #41963c,
+        plats: #7bc65c,
+        desserts: #aae583,
+    ), 
 );
