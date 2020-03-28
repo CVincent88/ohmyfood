@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* ------- Définition des maps du site ------ */
+/* ----- Définition des mixins ----- */
 /* Définitions des polices de caractère */
 @font-face {
   font-family: 'Biko';
