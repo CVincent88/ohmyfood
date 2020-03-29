@@ -1,7 +1,7 @@
 /* ----- Définition des mixins ----- */
 
 // Définition des styles des pages menus
-@mixin menu_config($menu_selected){
+@mixin menu_config($selected_menu){
     width: 80%;
     margin: auto;
     display: flex;
@@ -11,20 +11,20 @@
     padding: 20px 0;
     margin-bottom: 50px;
     box-shadow: 0 0 5px gray;
-    background-color: map-get($m_menu_background_color, $menu_selected);
+    background-color: map-get($m_menu_background_color, $selected_menu);
 }
 
 // Attribution des couleurs de catégories de plats en fonction du menu
-@mixin dishes_text_color($menu_selected){
-    $menu_selected: map-get($m_dishes_text_color, $menu_selected);
+@mixin dishes_text_color($selected_menu){
+    $selected_menu: map-get($m_dishes_text_color, $selected_menu);
     .entrees{
-        color: map-get($menu_selected, entrees);
+        color: map-get($selected_menu, entrees);
     }
     .plats{
-        color: map-get($menu_selected, plats);
+        color: map-get($selected_menu, plats);
     }
     .desserts{
-        color: map-get($menu_selected, desserts);
+        color: map-get($selected_menu, desserts);
     }
 }
 
@@ -48,28 +48,6 @@
     font-weight: lighter;
 }
 
-// Animation de soulignage sur les titres de catégories de plats
-@mixin anim_underline($selected_menu){
-    &:hover::before {
-        transform: scaleX(1);
-        opacity: 1;
-    }
-    &::before{
-        content: '';
-        width: 75%;
-        height: 2px;
-        position: absolute;
-        bottom: 0;
-        left: 12%;
-        border-radius: 50px;
-        transform: scaleX(0);
-        transform-origin: left;
-        opacity: 0;
-        transition: all .9s ease-in-out;
-        background-color: map-get($menu_category_underline_color, $selected_menu);
-    }
-}
-
 // Animation de fondu sur les menus de l'index.html
 @mixin anim_fondu{
     .fondu{
@@ -88,7 +66,7 @@
 }
 
 // Définit les lignes autour du titre de la catégorie de plat
-@mixin contour_titre($menu_selected){
+@mixin contour_titre($selected_menu){
     .contour{
         width: 100%;
         height: 5px;
@@ -96,7 +74,7 @@
         height: 60px;
         margin-bottom: 15px;
         &::after{
-            $menu_selected: map-get($m_dishes_outline_color, $menu_selected);
+            $selected_menu: map-get($m_dishes_lines_color, $selected_menu);
             content: "";
             position: absolute;
             height: 5px;
@@ -104,16 +82,68 @@
             width: 100%;            
         }
         &__entrees::after{
-            border-bottom: 1px solid map-get($menu_selected, entrees);
-            border-top: 1px solid map-get($menu_selected, entrees);
+            border-bottom: 1px solid map-get($selected_menu, entrees);
+            border-top: 1px solid map-get($selected_menu, entrees);
         }
         &__plats::after{
-            border-bottom: 1px solid map-get($menu_selected, plats);
-            border-top: 1px solid map-get($menu_selected, plats);
+            border-bottom: 1px solid map-get($selected_menu, plats);
+            border-top: 1px solid map-get($selected_menu, plats);
         }
         &__desserts::after{
-            border-bottom: 1px solid map-get($menu_selected, desserts);
-            border-top: 1px solid map-get($menu_selected, desserts);
+            border-bottom: 1px solid map-get($selected_menu, desserts);
+            border-top: 1px solid map-get($selected_menu, desserts);
         }
     }  
-}       
+}
+
+// Animation de soulignage sur les titres de catégories de plats
+// @mixin anim_underline($selected_menu){
+//     &:hover::before {
+//         transform: scaleX(1);
+//         opacity: 1;
+//     }
+//     &::before{
+//         content: '';
+//         width: 75%;
+//         height: 2px;
+//         position: absolute;
+//         bottom: 0;
+//         left: 12%;
+//         border-radius: 50px;
+//         transform: scaleX(0);
+//         transform-origin: left;
+//         opacity: 0;
+//         transition: all .9s ease-in-out;
+//         background-color: map-get($menu_category_underline_color, $selected_menu);
+//     }
+// }
+
+@mixin anim_underline($selected_menu){
+    $selected_menu: map-get($m_dishes_lines_color, $selected_menu);
+    .contour span:hover::before {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    .contour span::before{
+        content: '';
+        width: 75%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 12%;
+        border-radius: 50px;
+        transform: scaleX(0);
+        transform-origin: left;
+        opacity: 0;
+        transition: all .9s ease-in-out;
+    }
+    .contour__entrees span::before{
+        background-color: map-get($selected_menu, entrees);
+    }
+    .contour__plats span::before{
+        background-color: map-get($selected_menu, plats);
+    }
+    .contour__desserts span::before{
+        background-color: map-get($selected_menu, desserts);
+    }
+}

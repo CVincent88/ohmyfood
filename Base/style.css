@@ -442,6 +442,41 @@ footer a:hover {
   border-top: 1px solid #451b21;
 }
 
+.menu1 .contour span:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  opacity: 1;
+}
+
+.menu1 .contour span::before {
+  content: '';
+  width: 75%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+  border-radius: 50px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  opacity: 0;
+  -webkit-transition: all .9s ease-in-out;
+  transition: all .9s ease-in-out;
+}
+
+.menu1 .contour__entrees span::before {
+  background-color: #451b21;
+}
+
+.menu1 .contour__plats span::before {
+  background-color: #451b21;
+}
+
+.menu1 .contour__desserts span::before {
+  background-color: #451b21;
+}
+
 .menu1 .enseigne1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,30 +520,6 @@ footer a:hover {
   background-color: #fcdfdb;
   padding: 0 45px;
   position: relative;
-}
-
-.menu1 h4 span:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  opacity: 1;
-}
-
-.menu1 h4 span::before {
-  content: '';
-  width: 75%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 12%;
-  border-radius: 50px;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  opacity: 0;
-  -webkit-transition: all .9s ease-in-out;
-  transition: all .9s ease-in-out;
-  background-color: #451b21;
 }
 
 .menu1__section {
@@ -637,6 +648,41 @@ footer a:hover {
   border-top: 1px solid #6e4ccc;
 }
 
+.menu2 .contour span:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  opacity: 1;
+}
+
+.menu2 .contour span::before {
+  content: '';
+  width: 75%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+  border-radius: 50px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  opacity: 0;
+  -webkit-transition: all .9s ease-in-out;
+  transition: all .9s ease-in-out;
+}
+
+.menu2 .contour__entrees span::before {
+  background-color: #c67412;
+}
+
+.menu2 .contour__plats span::before {
+  background-color: #a56799;
+}
+
+.menu2 .contour__desserts span::before {
+  background-color: #6e4ccc;
+}
+
 .menu2 h3 {
   font-size: 1.7em;
   margin: 70px 0;
@@ -660,30 +706,6 @@ footer a:hover {
   padding: 0 45px;
   line-height: 60px;
   position: relative;
-}
-
-.menu2 h4 span:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  opacity: 1;
-}
-
-.menu2 h4 span::before {
-  content: '';
-  width: 75%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 12%;
-  border-radius: 50px;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  opacity: 0;
-  -webkit-transition: all .9s ease-in-out;
-  transition: all .9s ease-in-out;
-  background-color: #a56799;
 }
 
 .menu2__section {
@@ -779,6 +801,41 @@ footer a:hover {
   border-top: 1px solid #4eaff7;
 }
 
+.menu3 .contour span:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  opacity: 1;
+}
+
+.menu3 .contour span::before {
+  content: '';
+  width: 75%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+  border-radius: 50px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  opacity: 0;
+  -webkit-transition: all .9s ease-in-out;
+  transition: all .9s ease-in-out;
+}
+
+.menu3 .contour__entrees span::before {
+  background-color: #0e32de;
+}
+
+.menu3 .contour__plats span::before {
+  background-color: #0b73f3;
+}
+
+.menu3 .contour__desserts span::before {
+  background-color: #4eaff7;
+}
+
 .menu3 h3 {
   font-size: 2em;
   margin: 70px 0;
@@ -800,30 +857,6 @@ footer a:hover {
   background-color: #f9f9f9;
   padding: 0 45px;
   position: relative;
-}
-
-.menu3 h4 span:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  opacity: 1;
-}
-
-.menu3 h4 span::before {
-  content: '';
-  width: 75%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 12%;
-  border-radius: 50px;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  opacity: 0;
-  -webkit-transition: all .9s ease-in-out;
-  transition: all .9s ease-in-out;
-  background-color: #339af9;
 }
 
 .menu3__section {
@@ -918,6 +951,41 @@ footer a:hover {
   border-top: 1px solid #aae583;
 }
 
+.menu4 .contour span:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  opacity: 1;
+}
+
+.menu4 .contour span::before {
+  content: '';
+  width: 75%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+  border-radius: 50px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  opacity: 0;
+  -webkit-transition: all .9s ease-in-out;
+  transition: all .9s ease-in-out;
+}
+
+.menu4 .contour__entrees span::before {
+  background-color: #41963c;
+}
+
+.menu4 .contour__plats span::before {
+  background-color: #7bc65c;
+}
+
+.menu4 .contour__desserts span::before {
+  background-color: #aae583;
+}
+
 .menu4 h3 {
   font-size: 2em;
   background: -webkit-gradient(linear, left top, right top, from(#61a75a), to(#c7f79e));
@@ -938,30 +1006,6 @@ footer a:hover {
   background-color: #fdfffd;
   padding: 0 45px;
   position: relative;
-}
-
-.menu4 h4 span:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  opacity: 1;
-}
-
-.menu4 h4 span::before {
-  content: '';
-  width: 75%;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 12%;
-  border-radius: 50px;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  opacity: 0;
-  -webkit-transition: all .9s ease-in-out;
-  transition: all .9s ease-in-out;
-  background-color: #7cc362;
 }
 
 .menu4__section {
