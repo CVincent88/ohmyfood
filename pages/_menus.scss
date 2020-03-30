@@ -28,7 +28,7 @@
         
       }
     &__section{
-        width: 90%;
+        width:90%;
         margin: 5px 0 10px;
         & ul{
             padding: 0;
@@ -87,12 +87,11 @@
         background-color: $background-color-menu2;
         padding: 0 45px;
         line-height: 60px;
-        position: relative;
+        position: relative; // Pour placer le ::before (Soulignage)
     }
     &__section{
         width: 90%;
         margin-bottom: 40px;
-        font-weight: lighter;
         & ul{
             padding: 0;
             line-height: 3;
@@ -102,7 +101,6 @@
             & li{
                 display: flex;
                 justify-content: space-between;
-                font-weight: lighter;
                 & .prix{
                     font-family: 'ingleby_bold', sans-serif;
                 }
@@ -128,7 +126,7 @@
     }
     & h4{
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.2em;
         font-weight: bolder;
     }
     & h4 span{
@@ -136,7 +134,7 @@
         background-color: $background-color-menu3;
         padding: 0 45px;
         position: relative;
-      }
+    }    
     &__section{
         width: 90%;
         margin: 5px 0 10px;
@@ -144,12 +142,11 @@
             padding: 0;
             line-height: 3;
             list-style-type: none;
-            width: 100%;
+            width: 95%;
             margin: auto;
             & li{
                 display: flex;
                 justify-content: space-between;
-                font-weight: lighter;
                 & .prix{
                     font-weight: bolder;
                 }
@@ -173,13 +170,13 @@
     }
     & h4{
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.2em;
         font-weight: bolder;
     }
     & h4 span{
         z-index: 2;
         background-color: $background-color-menu4;
-        padding: 0 45px;
+        padding: 0 5%;
         position: relative;
       }
     &__section{

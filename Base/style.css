@@ -417,6 +417,7 @@ footer a:hover {
   position: relative;
   height: 60px;
   margin-bottom: 15px;
+  position: relative;
 }
 
 .menu1 .contour::after {
@@ -450,11 +451,11 @@ footer a:hover {
 
 .menu1 .contour span::before {
   content: '';
-  width: 75%;
+  width: 70%;
   height: 2px;
   position: absolute;
   bottom: 0;
-  left: 12%;
+  left: 15%;
   border-radius: 50px;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -623,6 +624,7 @@ footer a:hover {
   position: relative;
   height: 60px;
   margin-bottom: 15px;
+  position: relative;
 }
 
 .menu2 .contour::after {
@@ -656,11 +658,11 @@ footer a:hover {
 
 .menu2 .contour span::before {
   content: '';
-  width: 75%;
+  width: 70%;
   height: 2px;
   position: absolute;
   bottom: 0;
-  left: 12%;
+  left: 15%;
   border-radius: 50px;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -711,7 +713,6 @@ footer a:hover {
 .menu2__section {
   width: 90%;
   margin-bottom: 40px;
-  font-weight: lighter;
 }
 
 .menu2__section ul {
@@ -729,7 +730,6 @@ footer a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-weight: lighter;
 }
 
 .menu2__section ul li .prix {
@@ -776,6 +776,7 @@ footer a:hover {
   position: relative;
   height: 60px;
   margin-bottom: 15px;
+  position: relative;
 }
 
 .menu3 .contour::after {
@@ -809,11 +810,11 @@ footer a:hover {
 
 .menu3 .contour span::before {
   content: '';
-  width: 75%;
+  width: 70%;
   height: 2px;
   position: absolute;
   bottom: 0;
-  left: 12%;
+  left: 15%;
   border-radius: 50px;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -848,7 +849,7 @@ footer a:hover {
 
 .menu3 h4 {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bolder;
 }
 
@@ -868,7 +869,7 @@ footer a:hover {
   padding: 0;
   line-height: 3;
   list-style-type: none;
-  width: 100%;
+  width: 95%;
   margin: auto;
 }
 
@@ -879,7 +880,6 @@ footer a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-weight: lighter;
 }
 
 .menu3__section ul li .prix {
@@ -926,6 +926,7 @@ footer a:hover {
   position: relative;
   height: 60px;
   margin-bottom: 15px;
+  position: relative;
 }
 
 .menu4 .contour::after {
@@ -959,11 +960,11 @@ footer a:hover {
 
 .menu4 .contour span::before {
   content: '';
-  width: 75%;
+  width: 70%;
   height: 2px;
   position: absolute;
   bottom: 0;
-  left: 12%;
+  left: 15%;
   border-radius: 50px;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -997,14 +998,14 @@ footer a:hover {
 
 .menu4 h4 {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bolder;
 }
 
 .menu4 h4 span {
   z-index: 2;
   background-color: #fdfffd;
-  padding: 0 45px;
+  padding: 0 5%;
   position: relative;
 }
 
