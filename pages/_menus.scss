@@ -3,6 +3,7 @@
     @include dishes_text_color (menu1);
     @include contour_titre(menu1);
     @include anim_underline(menu1);
+    @include titres_cat_plats(menu1);
     font-family: 'Segoe Print', sans-serif;
     & .enseigne1{
         display: flex;
@@ -15,35 +16,8 @@
             @include menu1_titre;
         }
     }
-    & h4{
-        text-align: center;
-        font-size: 1.5em;
-        font-weight: bolder;
-    }
-    & h4 span{
-        z-index: 2;
-        background-color: $background-color-menu1;
-        padding: 0 45px;
-        position: relative;
-        
-      }
     &__section{
-        width:90%;
-        margin: 5px 0 10px;
-        & ul{
-            padding: 0;
-            line-height: 3;
-            list-style-type: none;
-            width: 100%;
-            margin: auto;
-            & li{
-                display: flex;
-                justify-content: space-between;
-                & .prix{
-                    font-weight: bolder;
-                }
-            }
-        }
+        @include section_config;
     }
     & .enseigne1-small{
         display: flex;
@@ -67,6 +41,7 @@
     @include dishes_text_color (menu2);
     @include contour_titre(menu2);
     @include anim_underline(menu2);
+    @include titres_cat_plats(menu2);
     font-family: 'ingleby_regular', sans-serif;
     & h3{
         font-size: 1.7em;
@@ -76,34 +51,14 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: 'CroissantOne-Regular', sans-serif;
-    }
-    & h4{
-        font-size: 1.5em;
         text-align: center;
-        font-family: 'ingleby_bold', sans-serif;
-    }
-    & h4 span{
-        z-index: 2;
-        background-color: $background-color-menu2;
-        padding: 0 45px;
-        line-height: 60px;
-        position: relative; // Pour placer le ::before (Soulignage)
     }
     &__section{
-        width: 90%;
-        margin-bottom: 40px;
+        @include section_config;
         & ul{
-            padding: 0;
-            line-height: 3;
-            list-style-type: none;
-            width: 80%;
-            margin: auto;
-            & li{
-                display: flex;
-                justify-content: space-between;
-                & .prix{
-                    font-family: 'ingleby_bold', sans-serif;
-                }
+            width: 90%;
+            & .prix{
+                font-family: 'ingleby_bold', sans-serif;
             }
         }
     }
@@ -115,6 +70,7 @@
     @include dishes_text_color (menu3);
     @include contour_titre(menu3);
     @include anim_underline(menu3);
+    @include titres_cat_plats(menu3);
     font-family: 'Segoe Print', sans-serif;
     & h3{
         font-size: 2em;
@@ -123,35 +79,10 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
-    & h4{
         text-align: center;
-        font-size: 1.2em;
-        font-weight: bolder;
-    }
-    & h4 span{
-        z-index: 2;
-        background-color: $background-color-menu3;
-        padding: 0 45px;
-        position: relative;
-    }    
+    }  
     &__section{
-        width: 90%;
-        margin: 5px 0 10px;
-        & ul{
-            padding: 0;
-            line-height: 3;
-            list-style-type: none;
-            width: 95%;
-            margin: auto;
-            & li{
-                display: flex;
-                justify-content: space-between;
-                & .prix{
-                    font-weight: bolder;
-                }
-            }
-        }
+        @include section_config;
     }
 }
 
@@ -160,6 +91,7 @@
     @include dishes_text_color (menu4);
     @include contour_titre(menu4);
     @include anim_underline(menu4);
+    @include titres_cat_plats(menu4);
     font-family: 'Segoe Print', sans-serif;
     & h3{
         font-size: 2em;
@@ -167,35 +99,9 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
-    & h4{
         text-align: center;
-        font-size: 1.2em;
-        font-weight: bolder;
     }
-    & h4 span{
-        z-index: 2;
-        background-color: $background-color-menu4;
-        padding: 0 5%;
-        position: relative;
-      }
     &__section{
-        width: 90%;
-        margin: 5px 0 10px;
-        & ul{
-            padding: 0;
-            line-height: 3;
-            list-style-type: none;
-            width: 100%;
-            margin: auto;
-            & li{
-                display: flex;
-                justify-content: space-between;
-                font-weight: lighter;
-                & .prix{
-                    font-weight: bolder;
-                }
-            }
-        }
+        @include section_config;
     }
 }

@@ -6,7 +6,7 @@
     justify-content: center;
     &__menu{
         width:40%;
-        min-width: 430px;
+        min-width: 400px;
         height: 600px;
         margin: 25px;
         box-shadow: 0 0 3px rgba(0, 0, 0, .3);
@@ -15,6 +15,16 @@
         flex-direction: column-reverse;
         justify-content: center;
         @include anim_fondu;
+        @media screen and(max-width: 959px){
+            width: 80%;
+            height: 400px;
+        }
+        @media screen and(max-width: 426px){
+            width: 90%;
+            height: 350px;
+            min-width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+        }
         &__1{
             background-color: $background-color-menu1;
             color: $menu1-theme3;

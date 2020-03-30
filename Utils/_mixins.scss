@@ -2,7 +2,7 @@
 
 // Définition des styles des pages menus
 @mixin menu_config($selected_menu){
-    width: 80%;
+    width: 85%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -10,8 +10,65 @@
     font-size: 1.5em;
     padding: 20px 0;
     margin-bottom: 50px;
-    box-shadow: 0 0 5px gray;
+    box-shadow: 0 0 10px rgba(128, 128, 128, .7);
     background-color: map-get($m_menu_background_color, $selected_menu);
+    @media screen and (max-width: 959px){
+        width: 95%;
+    }
+}
+
+// Définition du style des titres de catégories de plats (h4)
+@mixin titres_cat_plats($selected_menu){
+    h4{
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: bolder;
+        & span{
+            display: inline-block;
+            line-height: 1.5;
+            z-index: 2;
+            background-color: map-get($m_menu_background_color, $selected_menu);
+            padding: 0 45px;
+            position: relative; // Pour placer le ::before (Soulignage)
+            @media screen and(max-width: 525px){
+                width: 100%;
+                padding: 0;
+                font-size: .85em;
+            } 
+        }
+    }
+}
+
+// Définition du style des section
+@mixin section_config{
+    width:90%;
+    margin: 5px 0 10px;
+    & ul{
+        padding: 0;
+        list-style-type: none;
+        width: 100%;
+        margin: auto;
+        & li{
+            display: flex;
+            justify-content: space-between;
+            margin: 2.5em 0;
+            line-height: 1.2;
+            @media screen and (max-width: 1200px){
+                align-items: center;
+            }
+            @media screen and (max-width: 600px){
+                text-align: center;
+                flex-direction: column;
+            }
+            & .prix{
+                font-weight: bolder;
+                padding: 0 0 0 30px;
+                @media screen and (max-width: 600px){
+                    padding: 20px 0 0 0;
+                }
+            }
+        }
+    }
 }
 
 // Attribution des couleurs de catégories de plats en fonction du menu
@@ -80,7 +137,10 @@
             position: absolute;
             height: 5px;
             top: 50%;
-            width: 100%;            
+            width: 100%;
+            @media screen and(max-width: 700px){
+                display: none;
+            }           
         }
         &__entrees::after{
             border-bottom: 1px solid map-get($selected_menu, entrees);
@@ -115,6 +175,10 @@
         transform-origin: left;
         opacity: 0;
         transition: all .9s ease-in-out;
+        @media screen and(max-width: 700px){
+            opacity: 1;
+            transform: scale(1);
+        } 
     }
     .contour__entrees span::before{
         background-color: map-get($selected_menu, entrees);
@@ -125,26 +189,5 @@
     .contour__desserts span::before{
         background-color: map-get($selected_menu, desserts);
     }
+    
 }
-
-// Définition des styles de section - À utiliser ??
-// @mixin section {
-//     .section{
-//         width: 90%;
-//         margin: 5px 0 10px;
-//         & ul{
-//             padding: 0;
-//             line-height: 3;
-//             list-style-type: none;
-//             width: 100%;
-//             margin: auto;
-//             & li{
-//                 display: flex;
-//                 justify-content: space-between;
-//                 & .prix{
-//                     font-weight: bolder;
-//                 }
-//             }
-//         }
-//     }
-// }
