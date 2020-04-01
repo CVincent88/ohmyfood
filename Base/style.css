@@ -61,18 +61,29 @@
 
 @font-face {
   font-family: 'ingleby_bold';
-  src: url("../fonts/ingleby-bold/ingleby_bold-webfont.woff2") format("woff2"), url("../fonts/ingleby-bold/ingleby_bold-webfont.woff") format("woff"), url("../fonts/ingleby-bold/ingleby_bold.ttf") format("woff");
+  src: url("../fonts/ingleby-bold/ingleby_bold-webfont.woff2") format("woff2"), url("../fonts/ingleby-bold/ingleby_bold-webfont.woff") format("woff"), url("../fonts/ingleby-bold/ingleby_bold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'alluraregular';
+  src: url("../fonts/allura-regular/allura-regular.woff2") format("woff2"), url("../fonts/allura-regular/allura-regular.woff") format("woff"), url("../fonts/allura-regular/allura-Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'meriendaregular';
+  src: url("../fonts/merienda-regular/merienda-regular.woff2") format("woff2"), url("../fonts/merienda-regular/merienda-regular.woff") format("woff"), url("../fonts/merienda-regular/merienda-Regular.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
 
 /* Définitions de paramètres de base */
-* {
+body {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-}
-
-body {
   font-size: 16px;
   font-family: 'Biko', sans-serif;
   font-style: normal;
@@ -201,8 +212,8 @@ footer a {
 }
 
 footer a:hover {
-  -webkit-animation: shaky 0.1s cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
-          animation: shaky 0.1s cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
+  -webkit-animation: shaky 0.1s cubic-bezier(0.4, 0.1, 0.6, 0.9) 0.3s 3;
+          animation: shaky 0.1s cubic-bezier(0.4, 0.1, 0.6, 0.9) 0.3s 3;
 }
 
 /* Définition des paramètre de la page principale */
@@ -243,6 +254,8 @@ footer a:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .main__menu a:hover {
@@ -250,11 +263,9 @@ footer a:hover {
 }
 
 .main__menu a:hover + .fondu {
-  -webkit-transform: scale(1.6);
-          transform: scale(1.6);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   opacity: .3;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
 }
 
 @media screen and (max-width: 959px) {
@@ -301,6 +312,7 @@ footer a:hover {
   font-family: 'Devonshire-Regular';
   font-size: 2em;
   font-weight: lighter;
+  color: #451b21;
 }
 
 .main__menu__1 a {
@@ -343,14 +355,14 @@ footer a:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'CroissantOne-Regular', sans-serif;
-  font-size: 1.7em;
+  font-family: 'alluraregular', sans-serif;
+  font-size: 2.5em;
   font-weight: 100;
 }
 
 .main__menu__3 a {
-  font-family: 'WorstveldSlingBoldOblique', sans-serif;
-  font-size: 4em;
+  font-family: 'Segoe Print', sans-serif;
+  font-size: 3em;
   color: #339af9;
   font-weight: 200;
 }
@@ -366,14 +378,14 @@ footer a:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'CroissantOne-Regular', sans-serif;
-  font-size: 1.7em;
+  font-family: 'meriendaregular', sans-serif;
+  font-size: 2em;
   font-weight: 100;
 }
 
 .main__menu__4 a {
-  font-family: 'WorstveldSlingBoldOblique', sans-serif;
-  font-size: 4em;
+  font-family: 'Segoe Print', sans-serif;
+  font-size: 3em;
   color: #7cc362;
   font-weight: 200;
 }
@@ -422,7 +434,7 @@ footer a:hover {
   width: 100%;
   height: 5px;
   position: relative;
-  height: 60px;
+  height: 45px;
   margin-bottom: 15px;
   position: relative;
 }
@@ -500,7 +512,7 @@ footer a:hover {
 }
 
 .menu1 h4 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: center;
   font-weight: bolder;
 }
@@ -552,6 +564,7 @@ footer a:hover {
   font-family: 'Devonshire-Regular';
   font-size: 2em;
   font-weight: lighter;
+  color: #451b21;
 }
 
 .menu1__section {
@@ -638,6 +651,7 @@ footer a:hover {
   font-family: 'Devonshire-Regular';
   font-size: 2em;
   font-weight: lighter;
+  color: #451b21;
   font-size: 1.5em;
 }
 
@@ -685,7 +699,7 @@ footer a:hover {
   width: 100%;
   height: 5px;
   position: relative;
-  height: 60px;
+  height: 45px;
   margin-bottom: 15px;
   position: relative;
 }
@@ -763,7 +777,7 @@ footer a:hover {
 }
 
 .menu2 h4 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: center;
   font-weight: bolder;
 }
@@ -786,7 +800,7 @@ footer a:hover {
 }
 
 .menu2 h3 {
-  font-size: 1.7em;
+  font-size: 1.5em;
   margin: 70px 0;
   background: -webkit-gradient(linear, left top, right top, from(#c67412), to(#6e4ccc));
   background: linear-gradient(to right, #c67412, #6e4ccc);
@@ -901,7 +915,7 @@ footer a:hover {
   width: 100%;
   height: 5px;
   position: relative;
-  height: 60px;
+  height: 45px;
   margin-bottom: 15px;
   position: relative;
 }
@@ -979,7 +993,7 @@ footer a:hover {
 }
 
 .menu3 h4 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: center;
   font-weight: bolder;
 }
@@ -1002,7 +1016,8 @@ footer a:hover {
 }
 
 .menu3 h3 {
-  font-size: 2em;
+  font-family: 'alluraregular', sans-serif;
+  font-size: 2.5em;
   margin: 70px 0;
   background: -webkit-gradient(linear, left top, right top, from(#1944e2), to(#91c7f9));
   background: linear-gradient(to right, #1944e2, #91c7f9);
@@ -1108,7 +1123,7 @@ footer a:hover {
   width: 100%;
   height: 5px;
   position: relative;
-  height: 60px;
+  height: 45px;
   margin-bottom: 15px;
   position: relative;
 }
@@ -1186,7 +1201,7 @@ footer a:hover {
 }
 
 .menu4 h4 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: center;
   font-weight: bolder;
 }
@@ -1209,6 +1224,7 @@ footer a:hover {
 }
 
 .menu4 h3 {
+  font-family: 'meriendaregular', sans-serif;
   font-size: 2em;
   background: -webkit-gradient(linear, left top, right top, from(#61a75a), to(#c7f79e));
   background: linear-gradient(to right, #61a75a, #c7f79e);

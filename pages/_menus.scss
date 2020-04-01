@@ -1,3 +1,8 @@
+@mixin test($menu){
+    @include menu_config($menu)
+}
+
+
 .menu1{
     @include menu_config (menu1);
     @include dishes_text_color (menu1);
@@ -44,7 +49,7 @@
     @include titres_cat_plats(menu2);
     font-family: 'ingleby_regular', sans-serif;
     & h3{
-        font-size: 1.7em;
+        font-size: 1.5em;
         margin: 70px 0;
         background: linear-gradient(to right, $menu2-theme1, $menu2-theme2);
         background-clip: text;
@@ -62,7 +67,6 @@
             }
         }
     }
-    
 }
 
 .menu3{
@@ -73,7 +77,8 @@
     @include titres_cat_plats(menu3);
     font-family: 'Segoe Print', sans-serif;
     & h3{
-        font-size: 2em;
+        font-family: 'alluraregular', sans-serif;
+        font-size: 2.5em;
         margin: 70px 0;
         background: linear-gradient(to right, $menu3-theme1, $menu3-theme2);
         background-clip: text;
@@ -94,6 +99,7 @@
     @include titres_cat_plats(menu4);
     font-family: 'Segoe Print', sans-serif;
     & h3{
+        font-family: 'meriendaregular', sans-serif;
         font-size: 2em;
         background: linear-gradient(to right, $menu4-theme1, $menu4-theme2);
         background-clip: text;

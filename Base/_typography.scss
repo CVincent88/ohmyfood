@@ -9,9 +9,9 @@
          url('../fonts/biko/Biko.svg#Biko') format('svg');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-  @font-face {
+@font-face {
      font-family: 'Devonshire-Regular';
      src: url('../fonts/devonshire-regular/Devonshire-Regular.eot?#iefix') format('embedded-opentype'),  
           url('../fonts/devonshire-regular/Devonshire-Regular.woff') format('woff'), 
@@ -22,7 +22,7 @@
 }
    
 
-  @font-face {
+@font-face {
     font-family: 'Kalam-Regular';
     src: url('../fonts/kalam-regular/Kalam-Regular.eot?#iefix') format('embedded-opentype'),    
          url('../fonts/kalam-regular/Kalam-Regular.woff') format('woff'), 
@@ -30,9 +30,9 @@
          url('../fonts/kalam-regular/Kalam-Regular.svg#Kalam-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'CroissantOne-Regular';
     src: url('../fonts/croissantOne-regular/CroissantOne-Regular.eot?#iefix') format('embedded-opentype'),  
          url('../fonts/croissantOne-regular/CroissantOne-Regular.woff') format('woff'), 
@@ -40,9 +40,9 @@
          url('../fonts/croissantOne-regular/CroissantOne-Regular.svg#CroissantOne-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'ApparatusSIL';
     src: url('../fonts/apparatusSIL/ApparatusSIL.eot?#iefix') format('embedded-opentype'),    
          url('../fonts/apparatusSIL/ApparatusSIL.woff') format('woff'), 
@@ -50,19 +50,19 @@
          url('../fonts/apparatusSIL/ApparatusSIL.svg#ApparatusSIL') format('svg');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'WorstveldSlingBoldOblique';
     src: url('../fonts/worstveldSlingBoldOblique/WorstveldSlingBoldOblique.eot?#iefix') format('embedded-opentype'),    url('../fonts/worstveldSlingBoldOblique/WorstveldSlingBoldOblique.woff') format('woff'), 
          url('../fonts/worstveldSlingBoldOblique/WorstveldSlingBoldOblique.ttf')  format('truetype'), 
          url('../fonts/worstveldSlingBoldOblique/WorstveldSlingBoldOblique.svg#WorstveldSlingBoldOblique') format('svg');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 
-  @font-face { // Typo texte menu 1 + text menu 4
+@font-face { // Typo texte menu 1 + text menu 4
      font-family: 'Segoe Print';
      src: url('SegoePrint.eot');
      src: url('../fonts/segoe-print/SegoePrint.eot?#iefix') format('embedded-opentype'),
@@ -72,23 +72,43 @@
          url('../fonts/segoe-print/SegoePrint.svg#SegoePrint') format('svg');
      font-weight: normal;
      font-style: normal;
- }
+}
 
- @font-face {  // Typo menu Le chic à la française
+@font-face {  // Typo menu Le chic à la française
      font-family: 'ingleby_regular';
      src: url('../fonts/ingleby_regular/ingleby_regular-webfont.woff2') format('woff2'),
           url('../fonts/ingleby_regular/ingleby_regular-webfont.woff') format('woff'),
           url('../fonts/ingleby_regular/ingleby_regular.ttf') format('ttf');
      font-weight: normal;
      font-style: normal;
- }
+}
 
- @font-face { // Typo menu Le chic à la française (prix et titres)
+@font-face { // Typo menu Le chic à la française (prix et titres)
      font-family: 'ingleby_bold';
      src: url('../fonts/ingleby-bold/ingleby_bold-webfont.woff2') format('woff2'),
           url('../fonts/ingleby-bold/ingleby_bold-webfont.woff') format('woff'),
-          url('../fonts/ingleby-bold/ingleby_bold.ttf') format('woff');
+          url('../fonts/ingleby-bold/ingleby_bold.ttf') format('ttf');
      font-weight: normal;
      font-style: normal;
  
- }
+}
+
+@font-face {
+     font-family: 'alluraregular';
+     src: url('../fonts/allura-regular/allura-regular.woff2') format('woff2'),
+          url('../fonts/allura-regular/allura-regular.woff') format('woff'),
+          url('../fonts/allura-regular/allura-Regular.otf') format('otf');
+     font-weight: normal;
+     font-style: normal;
+ 
+}
+ 
+@font-face {
+     font-family: 'meriendaregular';
+     src: url('../fonts/merienda-regular/merienda-regular.woff2') format('woff2'),
+          url('../fonts/merienda-regular/merienda-regular.woff') format('woff'),
+          url('../fonts/merienda-regular/merienda-Regular.otf') format('otf');
+     font-weight: normal;
+     font-style: normal;
+ 
+}

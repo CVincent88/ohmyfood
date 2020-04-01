@@ -20,7 +20,7 @@
 // Définition du style des titres de catégories de plats (h4)
 @mixin titres_cat_plats($selected_menu){
     h4{
-        font-size: 1.5em;
+        font-size: 1.3em;
         text-align: center;
         font-weight: bolder;
         & span{
@@ -103,6 +103,7 @@
     font-family: 'Devonshire-Regular';
     font-size: 2em;
     font-weight: lighter;
+    color: $menu1-theme3;
 }
 
 // Animation de fondu sur les menus de l'index.html
@@ -110,14 +111,14 @@
     .fondu{
         transform: scale(1);
         opacity: 1;
+        transition: all 1s ease-in-out;
     }
     a:hover{
         display: inline;
         & + .fondu{
-        transform: scale(1.6);
+        transform: scale(1.2);
         // filter: blur(2px);
         opacity: .3;
-        transition: all .3s ease-in-out;
         }    
     }
 }
@@ -128,7 +129,7 @@
         width: 100%;
         height: 5px;
         position: relative;
-        height: 60px;
+        height: 45px;
         margin-bottom: 15px;
         position: relative;
         &::after{
@@ -169,7 +170,7 @@
         width: 70%;
         height: 2px;
         position: absolute;
-        bottom: 0; left: 15%; // Vérifier comment centrer  le ::before !!!
+        bottom: 0; left: 15%;
         border-radius: 50px;
         transform: scaleX(0);
         transform-origin: left;

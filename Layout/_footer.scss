@@ -43,7 +43,7 @@ footer{
             height: auto;
         }
         &:hover{
-            animation: shaky .1s cubic-bezier(.4,.1,.6,.9) 3;
+            animation: shaky .1s cubic-bezier(.4,.1,.6,.9) .3s 3;
         }
     }
 }
