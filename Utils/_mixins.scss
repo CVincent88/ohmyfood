@@ -113,13 +113,10 @@
         opacity: 1;
         transition: all 1s ease-in-out;
     }
-    a:hover{
-        display: inline;
-        & + .fondu{
+    a:hover .fondu{
         transform: scale(1.2);
         // filter: blur(2px);
-        opacity: .3;
-        }    
+        opacity: .3;   
     }
 }
 
