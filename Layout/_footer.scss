@@ -23,27 +23,23 @@ footer{
     @media screen and (max-width: 959px){
         height: 3em;
     }
-    @media screen and (max-width: 390px){
-        position: initial;
-        align-items: center;
-    }
     & a{
         font-size: 1.5em;
         margin: 0 20px;
         color: $color-secondary;
         text-decoration: none;
-        @media screen and (max-width: 959px){
+        @media screen and (min-width: 768px){
+            &:hover{
+                animation: shaky .1s cubic-bezier(.4,.1,.6,.9) .3s 3;
+            }
+        }
+        @media screen and (max-width: 768px){
             font-size: 1.4em;
+            text-decoration: underline;
         }
         @media screen and (max-width: 426px){
             font-size: 1.3em;
             text-align: center;
-        }
-        @media screen and (max-width: 390px){
-            height: auto;
-        }
-        &:hover{
-            animation: shaky .1s cubic-bezier(.4,.1,.6,.9) .3s 3;
         }
     }
 }
