@@ -30,6 +30,7 @@ $m_menu_background_color: (
     menu2: $background-color-menu2,
     menu3: $background-color-menu3,
     menu4: $background-color-menu4,
+    mentions_legales: lighten($color-primary, 35%),
 );
 
 // Couleur catégories de plats

@@ -108,10 +108,10 @@ a {
   color: inherit;
 }
 
-.sur-titre_menu {
+.surtitre {
   text-align: center;
   font-size: 2em;
-  margin-top: 40px;
+  margin: 30px 0;
 }
 
 /* Définition des propritétés du header */
@@ -547,8 +547,8 @@ footer a {
   font-size: 1.5em;
   padding: 20px 0;
   margin-bottom: 50px;
-  -webkit-box-shadow: 0 0 10px rgba(128, 128, 128, 0.7);
-          box-shadow: 0 0 10px rgba(128, 128, 128, 0.7);
+  -webkit-box-shadow: 0 0 7px rgba(128, 128, 128, 0.7);
+          box-shadow: 0 0 7px rgba(128, 128, 128, 0.7);
   background-color: #fcdfdb;
   font-family: 'Segoe Print', sans-serif;
 }
@@ -812,8 +812,8 @@ footer a {
   font-size: 1.5em;
   padding: 20px 0;
   margin-bottom: 50px;
-  -webkit-box-shadow: 0 0 10px rgba(128, 128, 128, 0.7);
-          box-shadow: 0 0 10px rgba(128, 128, 128, 0.7);
+  -webkit-box-shadow: 0 0 7px rgba(128, 128, 128, 0.7);
+          box-shadow: 0 0 7px rgba(128, 128, 128, 0.7);
   background-color: #fff5fe;
   font-family: 'ingleby_regular', sans-serif;
 }
@@ -1028,8 +1028,8 @@ footer a {
   font-size: 1.5em;
   padding: 20px 0;
   margin-bottom: 50px;
-  -webkit-box-shadow: 0 0 10px rgba(128, 128, 128, 0.7);
-          box-shadow: 0 0 10px rgba(128, 128, 128, 0.7);
+  -webkit-box-shadow: 0 0 7px rgba(128, 128, 128, 0.7);
+          box-shadow: 0 0 7px rgba(128, 128, 128, 0.7);
   background-color: #f9f9f9;
   font-family: 'Segoe Print', sans-serif;
 }
@@ -1236,8 +1236,8 @@ footer a {
   font-size: 1.5em;
   padding: 20px 0;
   margin-bottom: 50px;
-  -webkit-box-shadow: 0 0 10px rgba(128, 128, 128, 0.7);
-          box-shadow: 0 0 10px rgba(128, 128, 128, 0.7);
+  -webkit-box-shadow: 0 0 7px rgba(128, 128, 128, 0.7);
+          box-shadow: 0 0 7px rgba(128, 128, 128, 0.7);
   background-color: #fdfffd;
   font-family: 'Segoe Print', sans-serif;
 }
@@ -1425,6 +1425,61 @@ footer a {
   .menu4__section ul li .prix {
     padding: 20px 0 0 0;
   }
+}
+
+.ML_main {
+  width: 85%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+  padding: 20px 0;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 0 7px rgba(128, 128, 128, 0.7);
+          box-shadow: 0 0 7px rgba(128, 128, 128, 0.7);
+  background-color: #c7dfd8;
+  padding: 1em 1.5em 2em;
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 959px) {
+  .ML_main {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .ML_main {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ML_main {
+    padding: 1em 1em 2em;
+  }
+}
+
+.ML_main .titre_mentions_legales {
+  color: #fcbd14;
+}
+
+.ML_main .ML_section {
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.ML_main ul {
+  padding-left: .5em;
 }
 
 /* Définition des paramètres des boutons */

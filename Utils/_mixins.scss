@@ -10,7 +10,7 @@
     font-size: 1.5em;
     padding: 20px 0;
     margin-bottom: 50px;
-    box-shadow: 0 0 10px rgba(128, 128, 128, .7);
+    box-shadow: 0 0 7px rgba(128, 128, 128, .7);
     background-color: map-get($m_menu_background_color, $selected_menu);
     @media screen and (max-width: 959px){
         width: 95%;

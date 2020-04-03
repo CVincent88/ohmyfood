@@ -1,0 +1,22 @@
+.ML_main{
+    @include menu_config(mentions_legales);
+    padding: 1em 1.5em 2em;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    @media screen and(max-width: 959px){
+        width: 85%;
+    }
+    @media screen and(max-width: 600px){
+        padding: 1em 1em 2em;
+    }
+    & .titre_mentions_legales{
+        color: darken($color-secondary, 10%);
+    }
+    & .ML_section{
+        margin-bottom: 2em;
+        width: 100%;
+    }
+    & ul{
+       padding-left: .5em;
+    }
+}
