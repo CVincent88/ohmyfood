@@ -38,7 +38,6 @@
         box-shadow: 0 0 3px rgba(0, 0, 0, .3);
         text-align: center;
         display: flex;
-        flex-direction: column-reverse;
         justify-content: center;
         @include anim_fondu;
         @media screen and(max-width: 959px){
@@ -138,7 +137,6 @@
                     font-family: 'Segoe Print', sans-serif;
                     font-size: 3em;
                     color: $menu4-theme3;
-                    // font-weight: 200;
                 }
             }
         }
