@@ -16,7 +16,7 @@
         box-shadow: 0 0 3px rgba(0, 0, 0, .3);
     }
     40%{
-        box-shadow: 0 0 6px rgba(0, 0, 0, .7);
+        box-shadow: 0 0 5px rgba(0, 0, 0, .7);
     }
     100%{
         box-shadow: 0 0 3px rgba(0, 0, 0, .3);
@@ -28,6 +28,8 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    padding: 0;
+    list-style-type: none;
     &__menu{
         width:40%;
         min-width: 400px;
@@ -42,6 +44,8 @@
         @media screen and(max-width: 959px){
             width: 80%;
             height: 400px;
+        }
+        @media screen and(max-width: 768px){
             animation: shadowbeat 3s ease-in-out infinite;
         }
         @media screen and(max-width: 426px){

@@ -1,4 +1,4 @@
-// Définition des variables du site 
+/* ------- Définition des variables du site ------ */
 
 $color-primary: #589c87;
 $color-secondary: #fdcb46;
@@ -8,6 +8,8 @@ $background-color-menu2: #fff5fe;
 $background-color-menu3: #f9f9f9;
 $background-color-menu4: #fdfffd;
 
+// Couleurs utilisées pour les menus
+$menu-theme-neutral: #000;
 $menu1-theme1: #f05560;
 $menu1-theme2: #f78f6a;
 $menu1-theme3: #451b21;
@@ -20,6 +22,9 @@ $menu3-theme3: #339af9;
 $menu4-theme1: #61a75a;
 $menu4-theme2: #c7f79e;
 $menu4-theme3: #7cc362;
+
+// Variable pour l'effet wiggle des éléments du footer
+$shake-intensity: 2%;
 
 /* ------- Définition des maps du site ------ */
 
@@ -47,14 +52,14 @@ $m_dishes_text_color: (
         desserts: $menu2-theme2,
     ),
     menu3: (
-        entrees: black,
-        plats: black,
-        desserts: black,
+        entrees: $menu-theme-neutral,
+        plats: $menu-theme-neutral,
+        desserts: $menu-theme-neutral,
     ),
     menu4: (
-        entrees: black,
-        plats: black,
-        desserts: black,
+        entrees: $menu-theme-neutral,
+        plats: $menu-theme-neutral,
+        desserts: $menu-theme-neutral,
     ), 
 );
 
@@ -72,13 +77,13 @@ $m_dishes_lines_color: (
         desserts: $menu2-theme2,
     ),
     menu3: (
-        entrees: #0e32de,
-        plats: #0b73f3,
-        desserts: #4eaff7,
+        entrees: $menu3-theme1,
+        plats: $menu3-theme3,
+        desserts: $menu3-theme2,
     ),
     menu4: (
-        entrees: #41963c,
-        plats: #7bc65c,
-        desserts: #aae583,
+        entrees: $menu4-theme1,
+        plats: $menu4-theme3,
+        desserts: $menu4-theme2,
     ), 
 );
