@@ -348,8 +348,8 @@ footer a {
     width: 90%;
     height: 350px;
     min-width: 300px;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   }
 }
 

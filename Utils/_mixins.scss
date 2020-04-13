@@ -17,6 +17,18 @@
     }
 }
 
+@mixin liens_menus{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and(max-width:768px){
+        animation: heartbeat 3s ease-in-out infinite;
+    }
+}
+
 // Définition du style des titres de catégories de plats (h4)
 @mixin titres_cat_plats($selected_menu){
     h4{
@@ -126,7 +138,7 @@
 }
 }
 
-// Définit les lignes autour du titre de la catégorie de plat
+// Définition des lignes autour du titre de la catégorie de plat
 @mixin contour_titre($selected_menu){
     .contour{
         width: 100%;
