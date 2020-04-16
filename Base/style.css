@@ -300,6 +300,7 @@ footer a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 .main__menu .fondu {
@@ -352,7 +353,6 @@ footer a {
 .main__menu__1 {
   background-color: #fcdfdb;
   color: #451b21;
-  overflow: hidden;
 }
 
 .main__menu__1 a {
@@ -407,7 +407,6 @@ footer a {
 
 .main__menu__2 {
   background-color: #fff5fe;
-  overflow: hidden;
 }
 
 .main__menu__2 h3 {
@@ -452,7 +451,6 @@ footer a {
 
 .main__menu__3 {
   background-color: #f9f9f9;
-  overflow: hidden;
 }
 
 .main__menu__3 h3 {
@@ -498,7 +496,6 @@ footer a {
 
 .main__menu__4 {
   background-color: #fdfffd;
-  overflow: hidden;
 }
 
 .main__menu__4 h3 {
